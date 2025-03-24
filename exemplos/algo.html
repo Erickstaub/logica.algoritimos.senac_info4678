@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" ID="nome" value="nome">
+    <br>
+    <input type="number" ID="idade" value="0">
+    <br> 
+    <input type="text" ID="email" value="email">
+    <br> 
+    <button onclick="total()">salvar dados</button>
+
+        <script>
+            function total() {
+            var nome = document.getElementById("nome").value;
+            var idade = document.getElementById("idade").value;
+            var email = document.getElementById("email").value;
+            var tudo = nome + "\n" + idade + "\n" + email
+            alert(tudo);
+            }
+
+        </script>
+
+
+
+
+
+
+</body>
+</html>
