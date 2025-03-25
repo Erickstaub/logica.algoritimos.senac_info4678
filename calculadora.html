@@ -6,12 +6,19 @@
     <title>soma</title>
 </head>
 <body>
+    <style>
+        body{
+            background-color: rgba(238, 238, 255, 0.792);
+        }
+    </style>
+
     <input type="number" id="1">
-    <input type="number" id="2">
     <button onclick="multiplica()">MULTIPLICA</button>
+    <button onclick="soma()">SOMA</button>
+        <br>
+    <input type="number" id="2">
     <button onclick="divisao()">DIVIDE</button>
     <button onclick="subtrai()">SUBTRAI</button>
-    <button onclick="soma()">SOMA</button>
         <script>
             function multiplica(){
                 var n1 = document.getElementById("1").value
@@ -20,20 +27,20 @@
                 alert(stotal)
             }
             function divisao() {
-            var n1 = document.getElementById("1").value
+                var n1 = document.getElementById("1").value
                 var n2 = document.getElementById("2").value
                 var dtotal = n1 / n2
                 alert(dtotal)
             }
             function subtrai() {
-            var n1 = document.getElementById("1").value
+                var n1 = document.getElementById("1").value
                 var n2 = document.getElementById("2").value
                 var mtotal = n1 - n2
                 alert(mtotal)
             }
             function soma() {
-            var n1 = document.getElementById("1").value
-                var n2 = document.getElementById("2").value
+                var n1 = parseFloat(document.getElementById("1").value)
+                var n2 = parseFloat(document.getElementById("2").value)
                 var stotal = n1 + n2
                 alert(stotal)
             }
