@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma</title>
+</head>
+<body>
+    <input type="number" id="1">
+    <input type="number" id="2">
+    <button onclick="multiplica()">MULTIPLICA</button>
+    <button onclick="divisao()">DIVIDE</button>
+    <button onclick="subtrai()">SUBTRAI</button>
+    <button onclick="soma()">SOMA</button>
+        <script>
+            function multiplica(){
+                var n1 = document.getElementById("1").value
+                var n2 = document.getElementById("2").value
+                var stotal = n1 * n2
+                alert(stotal)
+            }
+            function divisao() {
+            var n1 = document.getElementById("1").value
+                var n2 = document.getElementById("2").value
+                var dtotal = n1 / n2
+                alert(dtotal)
+            }
+            function subtrai() {
+            var n1 = document.getElementById("1").value
+                var n2 = document.getElementById("2").value
+                var mtotal = n1 - n2
+                alert(mtotal)
+            }
+            function soma() {
+            var n1 = document.getElementById("1").value
+                var n2 = document.getElementById("2").value
+                var stotal = n1 + n2
+                alert(stotal)
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
