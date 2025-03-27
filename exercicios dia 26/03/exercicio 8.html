@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" value="2.5"> Metros
+    <br>
+    <button onclick="distancia()">CONVERTA</button>
+    <script>
+        function distancia(){
+            var numero = parseFloat(document.getElementById(1).value)
+            var n = document.getElementById(1).value
+            var km = numero / 1000
+            var hm = numero / 100
+            var Dam = numero / 10
+            var dm = numero * 10
+            var cm = numero * 100
+            var mm = numero * 10000
+            alert("Converções:" + "\n" + km + " km" + "\n" + hm + " hm" + "\n" + Dam + " dam" + "\n" + dm + " dm" + "\n" + cm + " cm" + "\n" + mm + " mn")
+        
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

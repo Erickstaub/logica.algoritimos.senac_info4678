@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="1" value="pedro">
+    <input type="number" id="2" value="1400">
+    <button onclick="dado()">OLA</button>
+    <script>
+        function dado(){
+        var nome = document.getElementById("1").value
+        var salario = document.getElementById("2").value
+        var tudo = "O funcionario(a) " + " " + nome + " " + "tem um salario de RS" + salario + " " + "no mes de junho."
+        alert(tudo)
+
+        }
+    </script>
+
+</body>
+</html>

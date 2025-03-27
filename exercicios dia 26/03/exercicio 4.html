@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" value="1">
+    <input type="number" id="2" value="2">
+    <button onclick="soma()">SOMA</button>
+
+    <script>
+        function soma(){
+            var n1 = parseFloat(document.getElementById(1).value)
+            var n2 = parseFloat(document.getElementById(2).value)
+            var calc = n1 + n2
+            alert("O resultado é " + calc)
+        } 
+    </script>
+    
+</body>
+</html>

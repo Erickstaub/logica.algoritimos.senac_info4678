@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="1" value="1.5">
+    <input type="text" id="2" value="2.7">
+    <button onclick="media()">MEDIA</button>
+
+    <script>
+        function media(){
+            var n1 = parseFloat(document.getElementById(1).value)
+            var n2 = parseFloat(document.getElementById(2).value)
+            var calc = n1 + n2
+            var calcu = parseFloat(calc)
+            var fim = calcu / 2 
+            alert("Sua media é " + fim)
+        } 
+    </script> 
+</body>
+</html>

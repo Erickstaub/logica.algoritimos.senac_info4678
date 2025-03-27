@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" value="2">
+    <button onclick="coiso()">ANTECESOR E SUCESOR</button>
+    <script>
+        function coiso(){
+            var numero = parseFloat(document.getElementById(1).value)
+            var n = document.getElementById(1).value
+            var ante = numero - 1
+            var suce = numero + 1
+            alert("O antecesor de " + n + " é " + ante + ", o sucesor de " + n + " é " + suce)
+        
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
