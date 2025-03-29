@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dolar pra real</title>
+</head>
+<body>
+    <input type="number" id="1" value="500"> REAIS
+    <br>
+    <button onclick="dolar()">CONVERTA PRA DOLAR</button>
+    <script>
+        function dolar(){
+            var numero = parseFloat(document.getElementById("1").value)
+            var dolarhj = numero / 5.76
+            var ajuste = document.getElementsByTagName("dolarhj").innerHTML = dolarhj.toFixed(2)
+            alert("Você consegue comprar " + "$" + ajuste + " Dolares")
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tempo perdido por cigaro</title>
+</head>
+<body>
+    <input type="number" id="1" value="10">CIGAROS POR DIA
+    <br>
+    <input type="number" id="2" value="2">ANOS FUMANDO
+    <br>
+    <button onclick="cingaros()">TEMPO PERDIDO</button>
+    <script>
+        function cingaros(){
+            var diar = parseFloat(document.getElementById(1).value)
+            var ano = parseFloat(document.getElementById(2).value)
+            var diAno = ano * 365
+            var cingaru = diar * diAno
+            var perda = cingaru * 10
+            var calc = perda / 1440
+            var final = document.getElementsByTagName("calc").innerHTML = calc.toFixed(2)
+            alert("Você perdeu " + final + " Dias de vida")
+
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

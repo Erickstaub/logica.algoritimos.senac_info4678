@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parede pintada</title>
+</head>
+<body>
+    <input type="number" id="1" value="2.5">
+    <br>
+    <input type="number" id="2" value="4.5">
+    <br>
+    <button onclick="obra()">DADOS DA OBRA</button>
+    <script>
+        function obra(){
+            var altura = parseFloat(document.getElementById("1").value)
+            var largura = parseFloat(document.getElementById("2").value)
+            var area = altura * largura
+            var tinta = area / 2
+            var ajuste = document.getElementsByTagName("tinta").innerHTML = tinta.toFixed(2)
+            alert("A parede tem " + area + " m², e sera necesario " + ajuste + " litros de tinta para pintar")
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

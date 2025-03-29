@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delta</title>
+</head>
+<body>
+    <input type="number" id="1" value="2">
+    <br>
+    <input type="number" id="2" value="2">
+    <br>
+    <input type="number" id="3" value="3">
+    <button onclick="delta()">DELTA</button>
+    <script>
+        function delta(){
+            var a = parseFloat(document.getElementById("1").value)
+            var b = parseFloat(document.getElementById("2").value)
+            var c = parseFloat(document.getElementById("3").value)
+            var b2 = b * b
+            var mqac = a * c * -4
+            var fim = b2 + mqac
+            alert("Δ = " + fim)
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

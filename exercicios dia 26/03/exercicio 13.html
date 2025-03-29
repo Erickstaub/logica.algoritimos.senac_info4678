@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novo salario</title>
+</head>
+<body>
+    <input type="number" id="1" value="1400">
+    <br>
+    <button onclick="novoS()">NOVO SALARIO</button>
+    <script>
+        function novoS(){
+            var sal = parseFloat(document.getElementById("1").value)
+            var novo = sal + (sal * 0.15)
+            var total = document.getElementsByTagName("novo").innerHTML = novo.toFixed(2)
+            alert("Seu novo salario é R$" + total)
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

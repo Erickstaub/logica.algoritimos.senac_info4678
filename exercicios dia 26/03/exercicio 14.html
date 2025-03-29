@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divida</title>
+</head>
+<body>
+    <input type="number" id="1" value="5">DIAS
+    <br>
+    <input type="number" id="2" value="50">KM
+    <br>
+    <button onclick="divida()">SUA CONTA</button>
+    <script>
+        function divida(){
+            var dias = parseFloat(document.getElementById("1").value)
+            var km = parseFloat(document.getElementById("2").value)
+            var diaria = dias * 90
+            var kilo = km * 0.2
+            var valor = kilo + diaria
+            alert("Sua divida é R$" + valor)
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

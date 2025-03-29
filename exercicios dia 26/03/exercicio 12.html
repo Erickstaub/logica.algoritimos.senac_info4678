@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promoção</title>
+</head>
+<body>
+    <input type="number" id="1" value="69.99"> REAIS
+    <br>
+    <button onclick="promo()">5% OFF</button>
+    <script>
+        function promo(){
+            var preco = parseFloat(document.getElementById("1").value)
+            var comP = preco - (preco * 0.05)
+            var final = document.getElementsByTagName("comP").innerHTML = comP.toFixed(2)
+            alert("Com 5% off fica R$" + final)
+
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
