@@ -13,7 +13,7 @@
         function promo(){
             var preco = parseFloat(document.getElementById("1").value)
             var comP = preco - (preco * 0.05)
-            var final = document.getElementsByTagName("comP").innerHTML = comP.toFixed(2)
+            var final = comP.toFixed(2);
             alert("Com 5% off fica R$" + final)
 
 

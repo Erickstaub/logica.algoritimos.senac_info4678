@@ -13,21 +13,16 @@
     <button onclick="cingaros()">TEMPO PERDIDO</button>
     <script>
         function cingaros(){
-            var diar = parseFloat(document.getElementById(1).value)
-            var ano = parseFloat(document.getElementById(2).value)
-            var diAno = ano * 365
-            var cingaru = diar * diAno
-            var perda = cingaru * 10
-            var calc = perda / 1440
-            var final = document.getElementsByTagName("calc").innerHTML = calc.toFixed(2)
-            alert("Você perdeu " + final + " Dias de vida")
-
-
-
+            var diar = parseFloat(document.getElementById("1").value);
+            var ano = parseFloat(document.getElementById("2").value);
+            var diAno = ano * 365;
+            var cingaru = diar * diAno;
+            var perda = cingaru * 10;
+            var calc = perda / 1440;
+            var final = calc.toFixed(2);
+            alert("Você perdeu " + final + " Dias de vida");
         }
-
-
     </script>
-    
+
 </body>
 </html>
