@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JA PODE SE ALISTAR</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Sua idade">
+    <button onclick="preparado()">ALISTAMENTO</button>
+    <script>
+        function preparado(){
+            var idade = Number(document.getElementById("1").value)
+            if(idade >= 18){
+                var paso = idade - 18
+                alert("Já se passaram " + paso + " anos do alistamento" )
+            }else{
+                var falta = 18 - idade
+                alert("Falta " + falta + " anos para o alistamento")
+            }
+
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JA PODE VOTAR?</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Qual sua idade">
+    <br>
+    <button onclick="idade()">CONFIRA</button>
+    <script>
+        function idade(){
+            var anos = Number(document.getElementById("1").value)
+            if(anos >= 18){
+                alert("parabens você podera votar nesse ano")
+            }else{
+                alert("Você NÃO tem idade suficiente para votar")
+            }
+        }
+        </script>
+</body>
+</html>

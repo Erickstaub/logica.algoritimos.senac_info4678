@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPAR OU PAR?</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Escolha um numero">
+    <button onclick="impar()">IMPAR OU PAR</button>
+    <script>
+        function impar(){
+            var confere = Number(document.getElementById("1").value)
+            if(confere % 2 === 0){
+                alert("O numero é par")
+            }else{
+                alert("O numero é impar")
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

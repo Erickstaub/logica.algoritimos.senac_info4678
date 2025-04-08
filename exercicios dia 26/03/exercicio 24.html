@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREÇO DA PASSAGEM</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Quantos km tem a viagem">
+    <button onclick="preco()">PREÇO</button>
+    <script>
+        function preco(){
+            var km = Number(document.getElementById("1").value)
+            if(km <= 200){
+                var total1 = km * 0.50
+                alert("O preço da passagem é R$" + total1)
+            }else{
+                var total2 = km * 0.45
+                alert("O preço da passagem é R$" + total2)
+            }
+        }
+
+
+    </script>
+</body>
+</html>

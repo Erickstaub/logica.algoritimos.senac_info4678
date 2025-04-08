@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSOU DE ANO?</title>
+</head>
+<body>
+    <input type="text" id="1" placeholder="Nome">
+    <input type="number" id="2" placeholder="Nota 1">
+    <input type="number" id="3" placeholder="Nota 2">
+    <br>
+    <button onclick="media()">CONFIRA</button>
+    <script>
+        function media(){
+            var nota1 = Number(document.getElementById("2").value)
+            var nota2 = Number(document.getElementById("3").value)
+            var calc = (nota1 + nota2) / 2
+            if(calc > 7){
+                alert("Parabens !!! Você obteve a media")
+            }else{
+                alert("Você reprovou")
+            }
+           
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTA POR KM</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Quantos km/h estava?">
+    <br>
+    <button onclick="multa()">CONFIRA</button>
+    <script>
+        function multa(){
+            var velo = Number(document.getElementById("1").value)
+            if(velo > 80){
+                var multas = (velo - 80) * 5
+                alert("Você foi multado em R$" + multas.toFixed(2))
+            }else{
+                alert("Você esta dentro do limite de velocidade")
+            }
+        }
+    </script>
+</body>
+</html>

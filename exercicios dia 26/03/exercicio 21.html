@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANO BIXESTO?</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Escolha um ano">
+    <br>
+    <button onclick="bisexto()">ANO BIXESTO?</button>
+    <script>
+        function bisexto(){
+            var ano = Number(document.getElementById("1").value)
+            if(ano % 4 === 0){
+                alert("Esse ano é bixesto")
+            }else{
+                alert("Esse ano nao é bixesto")
+            }
+
+        }
+</script>
+</body>
+</html>
