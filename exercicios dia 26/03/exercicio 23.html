@@ -8,15 +8,16 @@
 <body>
     <input type="text" id="nome" placeholder="Seu nome">
     <br>
-    <input type="number" id="sexo" placeholder="Seu sexo">
+    <input type="" id="sexo" placeholder="Seu sexo">
     <br>
     <input type="number" id="valor" placeholder="Preço total">
     <button onclick="desconto()">PREÇO FINAL</button>
     <script>
+        //NAO CONCLUIDO
         function desconto(){
-            var sexo = Number(document.getElementById("sexo").value)
+            var sexo = (document.getElementById("sexo").value)
             var preco = Number(document.getElementById("valor").value)
-            if(sexo % 2 ===0){
+            if(){
                 var desconto13 = preco - (preco * 0.13)
                 alert("O valor total sera R$" + desconto13)
             }else{
