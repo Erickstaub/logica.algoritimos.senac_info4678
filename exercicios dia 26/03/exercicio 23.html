@@ -8,23 +8,27 @@
 <body>
     <input type="text" id="nome" placeholder="Seu nome">
     <br>
-    <input type="" id="sexo" placeholder="Seu sexo">
+    <input type="checkbox" id="sexo" > FEMININO
+    <br>
+    <input type="checkbox" id="sexu" > MASCULINO
     <br>
     <input type="number" id="valor" placeholder="Preço total">
+    <br>
     <button onclick="desconto()">PREÇO FINAL</button>
     <script>
-        //NAO CONCLUIDO
-        function desconto(){
-            var sexo = (document.getElementById("sexo").value)
-            var preco = Number(document.getElementById("valor").value)
-            if(){
-                var desconto13 = preco - (preco * 0.13)
-                alert("O valor total sera R$" + desconto13)
-            }else{
-                var desconto5 = preco - (preco * 0.05)
-                alert("O valor total sera R$" + desconto5)
-            }
-        }
+        function desconto() {
+  const feminino = document.getElementById('sexo')
+  const masculino = document.getElementById('sexu')
+  var preco = Number(document.getElementById("valor").value)
+  if (feminino.checked) {
+    var desc1 = preco - (preco * 0.13)
+    alert("Preço com desconto fica R$" + desc1);
+  } else {
+    var desc2 = preco - (preco * 0.05)
+    alert("Preço com desconto fica R$" + desc2);
+  }
+}
+
     </script>
 </body>
 </html>
