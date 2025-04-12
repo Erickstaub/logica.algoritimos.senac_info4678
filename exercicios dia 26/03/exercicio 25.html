@@ -6,14 +6,14 @@
     <title>SEGMENTOS DO TRIANGULO</title>
 </head>
 <body>
-    <input type="number" id="1" placeholder="Metros segmento 1">
-    <input type="number" id="2" placeholder="Metros segmento 2">
-    <input type="number" id="3" placeholder="Metros segmento 3">
+    <input type="number" id="1" placeholder="Metros segmento 1"> +
+    <input type="number" id="2" placeholder="Metros segmento 2"> +
+    <input type="number" id="3" placeholder="Metros segmento 3"> 
     <button onclick="triangulo()">PREÇO</button>
     <script>
         function triangulo(){
-            var seg1 = Number(document.getElementById("1").value)
-            var seg2 = Number(document.getElementById("2").value)
+            var seg1 = Number(document.getElementById("1").value) 
+            var seg2 = Number(document.getElementById("2").value) 
             var seg3 = Number(document.getElementById("3").value)
             if(seg1 < seg3 + seg2 && seg2 < seg1 + seg3 && seg3 < seg2 + seg1){
                 alert("É possivel formar um triangulo")
