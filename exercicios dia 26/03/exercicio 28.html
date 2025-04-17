@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Largura">
+    <input type="number" id="2" placeholder="Diametro">
+    <button onclick="verifica()">RICO OU POBRE</button>
+    <script>
+        function verifica() {
+            var a = Number(document.getElementById("1").value)
+            var b = Number(document.getElementById("2").value)
+            var m2 = a * b
+            if(100 > m2){
+                alert("Terreno poupular")
+            }else if(m2 >= 100 && 500 >= m2){
+                alert("Terreno master")
+            }else if(m2 >= 500){
+                alert("Terreno vip")
+            }
+        }
+    </script>
+    
+</body>
+</html>

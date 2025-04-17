@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Seu nome">
+    <input type="number" id="2" placeholder="Seu Salario">
+    <input type="number" id="3" placeholder="Quantos anos de empresa">
+    <button onclick="verifica()">RODOU OU PASSO</button>
+    <script>
+        function verifica() {
+            var a = Number(document.getElementById("1").value)
+            var b = Number(document.getElementById("2").value)
+            var c = Number(document.getElementById("3").value)
+           
+            if(a < c + b && b < a + c && c < b + a){
+                if( a == b == c){
+                alert("Triangulo equilatero")
+                }else if(a == b !== c || a !== b == c || a == c !== b){
+                    alert("Triangulo escaleno")}
+            }else if(a !== b !== c || a !== c !== b){
+                    alert("Triangulo isosceles")
+            }
+            
+            else{
+                alert("Não é possivel formar triangulo")
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

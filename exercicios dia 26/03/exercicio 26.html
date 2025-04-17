@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Primeiro valor">
+    <input type="number" id="2" placeholder="Segundo valor">
+    <button onclick="verifica()">click me</button>
+    <script>
+        function verifica() {
+            var a = Number(document.getElementById("1").value)
+            var b = Number(document.getElementById("2").value)
+            if(a > b){
+                alert("Primeiro valor é maior")
+            }else if(b > a){
+                alert("Segundo valor é maior")
+            }else{
+                alert("Não existe valor maior, Os dois são iguais")
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
