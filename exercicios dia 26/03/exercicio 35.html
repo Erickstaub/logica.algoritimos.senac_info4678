@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="1" placeholder="Dias">
+    <input type="text" id="2" placeholder="Km rodados">
+    <button onclick="popular()">CARRO POPULAR</button>
+    <button onclick="luxo()">CARRO DE LUXO</button>
+    <script>
+        function popular() {
+            var dia = Number(document.getElementById("1").value)
+            var km = Number(document.getElementById("2").value)
+            var diaria = (dia * 90)
+            if(km > 100){
+                var km2 = km * 0.10
+                var total1 = km2 + diaria
+                alert("Você pagara " + total1 +"R$")
+            }else{
+                var km1 = km * 0.20
+                var total2 = km1 + diaria
+                alert("Você pagara " + total2 +"R$")
+            }
+            
+        }
+        function luxo() {
+            var dia = Number(document.getElementById("1").value)
+            var km = Number(document.getElementById("2").value)
+            var diaria2 = (dia * 150)
+            if(km > 200){
+                var km3 = km * 0.25
+                var total3 = km3 + diaria2
+                alert("Você pagara " + total3 +"R$")
+            }else{
+                var km4 = km * 0.30
+                var total4 = km4 + diaria2
+                alert("Você pagara " + total4 +"R$")
+            }
+            
+        }
+    </script>
+</body>
+</html>

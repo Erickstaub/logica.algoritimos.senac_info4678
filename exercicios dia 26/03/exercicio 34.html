@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Altura">
+    <input type="number" id="2" placeholder="Peso">
+    <button onclick="verifica()">IMC</button>
+    <script>
+        function verifica() {
+            var altura = Number(document.getElementById("1").value)
+            var peso = Number(document.getElementById("2").value)
+            var imc = peso / (altura * altura)
+            if(imc <= 18.5){
+                alert("Abaixou do peso ")
+            }else if( imc <= 25){
+                alert("peso ideal")
+            }else if(imc <= 30){
+                alert("sobre peso")
+            }else if(imc <= 40){
+                alert("obesidade")
+           }else{
+                alert("obesidade morbida")
+         }
+        }
+    </script>
+</body>
+</html>

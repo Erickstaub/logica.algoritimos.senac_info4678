@@ -6,30 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="number" id="1" placeholder="Seu nome">
-    <input type="number" id="2" placeholder="Seu Salario">
-    <input type="number" id="3" placeholder="Quantos anos de empresa">
-    <button onclick="verifica()">RODOU OU PASSO</button>
+    <input type="number" id="1" placeholder="primero lado">
+    <input type="number" id="2" placeholder="segundo lado">
+    <input type="number" id="3" placeholder="terceiro lado">
+    <button onclick="verifica()">QUAL TRIANGULO FORMA</button>
     <script>
         function verifica() {
             var a = Number(document.getElementById("1").value)
             var b = Number(document.getElementById("2").value)
             var c = Number(document.getElementById("3").value)
            
-            if(a < c + b && b < a + c && c < b + a){
-                if( a == b == c){
-                alert("Triangulo equilatero")
-                }else if(a == b !== c || a !== b == c || a == c !== b){
-                    alert("Triangulo escaleno")}
-            }else if(a !== b !== c || a !== c !== b){
-                    alert("Triangulo isosceles")
-            }
-            
-            else{
+        if(a < (c + b) && b < (a + c) && c < (b + a))   {
+               if( (a == b && b == c)){
+              alert("Triangulo equilatero")
+               }else if((a == b && b !== c) || (a == c && b !== c)) {
+                    alert("Triangulo escaleno ")    }
+               else if((a !== b && b !== c && a !== c)) {
+                    alert("Triangulo isosceles") 
+        }
+    }else    {
                 alert("Não é possivel formar triangulo")
             }
         }
-
 
     </script>
     

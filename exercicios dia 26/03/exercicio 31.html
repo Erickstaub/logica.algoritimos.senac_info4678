@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="tesoura()">TESOURA</button>
+    <button onclick="pedra()">PEDRA</button>
+    <button onclick="papel()">PAPEL</button>
+    <script>
+        function tesoura() {
+            var tesoura = Number(2)
+            var sorte = ((Math.random() * 2) + 1)
+            var rival = Math.round(sorte)
+            if(tesoura > rival){
+                alert("Você ganhou")}
+                else if(rival > tesoura){
+                alert("Você perdeu")
+
+
+            }else{
+                alert("Empate")
+        }
+    }
+    function pedra() {
+            var pedra = Number(2)
+            var sorte = ((Math.random() * 2) + 1)
+            var rival = Math.round(sorte)
+            if(pedra > rival){
+                alert("Você ganhou")}
+                else if(rival > pedra){
+                alert("Você perdeu")
+            }else{
+                alert("Empate")
+        }
+    }
+    function papel() {
+            var papel = Number(2)
+            var sorte = ((Math.random() * 2) + 1)
+            var rival = Math.round(sorte)
+            if(papel > rival){
+                alert("Você ganhou")}
+                else if(rival > papel){
+                alert("Você perdeu")
+
+
+            }else{
+                alert("Empate")
+        }
+    }
+    
+    </script>
+    
+</body>
+</html>

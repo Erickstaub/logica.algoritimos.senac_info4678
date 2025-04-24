@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Preço da casa">
+    <input type="number" id="2" placeholder="Seu Salario">
+    <input type="number" id="3" placeholder="Em quantos anos?">
+    <button onclick="verifica()">CONFIRA</button>
+    <script>
+        function verifica() {
+            var casa = Number(document.getElementById("1").value)
+            var sal = Number(document.getElementById("2").value)
+            var ano = Number(document.getElementById("3").value)
+            var mes = casa / (ano * 12)
+            var sal2 = (sal * 0.30)
+            if( mes < sal2){
+                alert("sera possivel o emprestimo, e sera de " + mes.toFixed(2) + "R$ por mês")
+            }else{
+                alert("Não é possivel o emprestimo")
+            }
+
+            
+
+        }
+    </script>
+</body>
+</html>

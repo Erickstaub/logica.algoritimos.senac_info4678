@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="ESCOLHA ENTRE 1 A 5">
+    <button onclick="verifica()">CONFERIR</button>
+    <script>
+        function verifica() {
+            var pessoa = Number(document.getElementById("1").value)
+            var PC = Math.round((Math.random() * 4.4) + 1)
+                if( pessoa == PC){
+                    alert("VOCÊ GANHOU")
+                }else{
+                    alert("VOCÊ PERDEU" + ", O numero certo era " + PC)
+                }
+        }
+    </script>
+    
+</body>
+</html>
