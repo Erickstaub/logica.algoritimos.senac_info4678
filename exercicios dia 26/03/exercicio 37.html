@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo salario</title>
+</head>
+<body>
+    <input type="text" id="1" placeholder="GENERO">
+    <input type="number" id="2" placeholder="SALARIO">
+    <input type="number" id="3" placeholder="ANOS DE EMPRESA">
+    <button onclick="calcula()">NOVO SALARIO</button>
+    <script>
+        function calcula() {
+            var gen = document.getElementById("1").value
+            var sal = Number(document.getElementById("2").value)
+            var ano = Number(document.getElementById("3").value)
+            if(gen == "Feminino"){
+                if(ano <= 15){
+                    var aumento1 = sal + (sal * 0.05)
+                    alert("Seu novo salario é de " + aumento1 + "R$")
+                }else if(ano <= 20){
+                    var aumento2 = sal + (sal * 0.12)
+                    alert("Seu novo salario é de " + aumento2 + "R$")
+                }else if(ano > 20){
+                    var aumento3 = sal + (sal * 0.23)
+                    alert("Seu novo salario é de " + aumento3 + "R$")
+                }
+            }else{
+                if(ano <= 20){
+                    var aumento4 = sal + (sal * 0.03)
+                    alert("Seu novo salario é de " + aumento4 + "R$")
+                }else if(ano <= 30){
+                    var aumento5 = sal + (sal * 0.13)
+                    alert("Seu novo salario é de " + aumento5 + "R$")
+                }else if(ano > 30){
+                    var aumento6 = sal + (sal * 0.25)
+                    alert("Seu novo salario é de " + aumento6 + "R$")
+                }
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

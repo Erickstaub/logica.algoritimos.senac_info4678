@@ -6,52 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="tesoura()">TESOURA</button>
-    <button onclick="pedra()">PEDRA</button>
-    <button onclick="papel()">PAPEL</button>
+    <input type="text" id="1" placeholder="Pedra, Papel, tesoura">
+    <input type="text" id="2" placeholder="Pedra, Papel, tesoura">
+    <button onclick="tesoura()">PARTIDA</button>
     <script>
         function tesoura() {
-            var tesoura = Number(2)
-            var sorte = ((Math.random() * 2) + 1)
-            var rival = Math.round(sorte)
-            if(tesoura > rival){
-                alert("Você ganhou")}
-                else if(rival > tesoura){
-                alert("Você perdeu")
-
-
-            }else{
-                alert("Empate")
+            var j1 = document.getElementById("1").value
+            var j2 = document.getElementById("2").value
+            if(j1 == "Tesoura"){
+                if(j2 == "Papel"){
+                    alert("Você Ganhou, oponente escolheu papel")
+                }else if(j2 == "Pedra"){
+                    alert("Você perdeu, oponente esconheu pedra")
+                }else{
+                    alert("Empate")
+                }
+            }else if(j1 == "Pedra"){
+                if(j2 == "Tesoura"){
+                    alert("Você Ganhou, oponente escolheu tesoura")
+                }else if(j2 == "Papel"){
+                    alert("Você perdeu, oponente esconheu papel")
+                }else{
+                    alert("Empate")
+                } 
+            }else if(j1 == "Papel"){
+                if(j2 == "Pedra"){
+                    alert("Você Ganhou, oponente escolheu pedra")
+                }else if(j2 == "Tesoura"){
+                    alert("Você perdeu, oponente esconheu tesoura")
+                }else{
+                    alert("Empate")
+                }
+            }
         }
-    }
-    function pedra() {
-            var pedra = Number(2)
-            var sorte = ((Math.random() * 2) + 1)
-            var rival = Math.round(sorte)
-            if(pedra > rival){
-                alert("Você ganhou")}
-                else if(rival > pedra){
-                alert("Você perdeu")
-            }else{
-                alert("Empate")
-        }
-    }
-    function papel() {
-            var papel = Number(2)
-            var sorte = ((Math.random() * 2) + 1)
-            var rival = Math.round(sorte)
-            if(papel > rival){
-                alert("Você ganhou")}
-                else if(rival > papel){
-                alert("Você perdeu")
-
-
-            }else{
-                alert("Empate")
-        }
-    }
-    
     </script>
+    
     
 </body>
 </html>
