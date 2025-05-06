@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="contagem()">CONTAGEM REGRESIVA</button>
+    <div id="1"></div>
+    <script>
+        let a = ""
+        function contagem(){
+            let diva = document.getElementById("1")
+            for(let i =10 ; i > 0; i--){a = a + " " + i}
+            let total = a + " Acabou"
+            diva.innerHTML = "<p>"+ total+"</p>"
+        }
+    </script>
+</body>
+</html>

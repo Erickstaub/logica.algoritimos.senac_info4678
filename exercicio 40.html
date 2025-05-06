@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="contagem()">CONTAGEM +3</button>
+    <div id="1"></div>
+    <script>
+
+        function contagem()
+        {
+            let divv = document.getElementById("1")
+            let a = "";
+            for(let i=0;i<21;i+=3){a = a + " " + i}
+        
+            let total =a + " Acabou"    
+            divv.innerHTML = "<p>" + total + "</p>";
+        };
+
+        
+    </script>
+</body>
+</html>

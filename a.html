@@ -6,11 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="number" id="1" placeholder="dado aleatorio">
+    <br>
+    <button onclick="a()">CLICA</button>
     <script>
-    var info = lines.split(" ")
-    var A = info[0]
-    var C = info[1]
-    var B = info[2]
+        window.onload = function a(){
+            let allN = 0;
+            for(let i=0;i<5;i++){allN =allN+i}console.log(allN)
+        }
     </script>
 </body>
 </html>
