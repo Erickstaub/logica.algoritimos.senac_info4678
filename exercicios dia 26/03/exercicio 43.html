@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="marca4()">CLIQUE</button>
+    <div id="1"></div>
+    <script>
+        function marca4(){
+            var diva = document.getElementById("1")
+            var a = " "  
+            for(var i= 0;i <=30;i++){
+                if(i % 4 === 0){
+                    a += "["+i+"]" 
+                }else{
+                    a = a+" "+ i;
+                }
+            }
+            diva.innerHTML = "<p>"+a+"</p>"
+        }
+    </script>
+</body>
+</html>
