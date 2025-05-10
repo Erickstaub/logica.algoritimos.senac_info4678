@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1" placeholder="Numero inicial">
+    <input type="number" id="2" placeholder="Numero final">
+    <input type="number" id="3" placeholder="Incremental">
+    <button onclick="coisas()">CLICA</button>
+    <div id="4"></div>
+    <script>
+        function coisas(){
+            var diva = document.getElementById("4")
+            var ini = Number(document.getElementById("1").value)
+            var fin = Number(document.getElementById("2").value)
+            var inc = Number(document.getElementById("3").value)
+            var a = ""  
+            if(ini <= fin){
+            for(var i = ini;i < fin;i+= inc){
+                a = a +" "+ i
+            }
+            diva.innerHTML = "<p>" +a +" Done!"+"</p>"
+        }else{
+            for(var i = ini;i >= fin;i-= inc){
+                a = a +" "+ i
+            }
+            diva.innerHTML = "<p>" +a +" Done!"+"</p>"
+        }
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>

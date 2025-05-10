@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1">
+    <input type="number" id="2">
+    <input type="number" id="3">
+    <input type="number" id="4">
+    <input type="number" id="5">
+    <input type="number" id="6">
+    <input type="number" id="7">
+    <button onclick="soma()">SOMAR</button>
+    <div id="tudo"></div>
+    <script>
+        function soma(){
+        var diva = document.getElementById("tudo")
+        var a = Number(document.getElementById("1").value)
+        var b = Number(document.getElementById("2").value)
+        var c = Number(document.getElementById("3").value)
+        var d = Number(document.getElementById("4").value)
+        var e = Number(document.getElementById("5").value)
+        var f = Number(document.getElementById("6").value)
+        var g = Number(document.getElementById("7").value)
+        var soma = a+b+c+d+e+f+g
+        diva.innerHTML = "<p>"+soma+"</p>"}
+    </script>
+</body>
+</html>

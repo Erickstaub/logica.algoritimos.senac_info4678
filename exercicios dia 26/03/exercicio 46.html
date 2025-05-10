@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="calc()">CLICA</button>
+    <div id="4"></div>
+    <script>
+        function calc(){
+            var diva = document.getElementById("4")  
+            var a = 0
+            for(var i = 6;i <= 100;i+=2){
+                a += i
+            }
+            diva.innerHTML = "<p>" +a +" Done!"+"</p>"}
+    </script>
+</body>
+</html>
