@@ -7,19 +7,21 @@
 </head>
 <body>
     <button onclick="contagem()">CONTAGEM</button>
-    <div>Numeros Sorteados:</div>
+    <div>Maior pro menor preço:</div>
     <div id="1"></div>
     <script>
 
         function contagem()
         {
-            var b =""
+            var b =[]
             for(let i = 0; i<=8;i++){
-                var a = (Math.random(10)*10).toFixed(0)
-                b = b +" "+ a
+                var a = (Math.random()*100).toFixed(0)
+                b.push(a)
             }
-            const num = [a]
-            document.getElementById("1").innerHTML = "<p>"+b+"</p>"
+            b.sort(function compara(a, b){
+                return b - a
+            })
+            document.getElementById("1").innerHTML = "<p>"+b.join(".00R$ ")+"</p>"
     
         };
 

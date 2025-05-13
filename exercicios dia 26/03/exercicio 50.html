@@ -6,22 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="contagem()">CONTAGEM</button>
+        <button onclick="contagem()">CONTAGEM</button>
+    <div>Numeros Sorteados:</div>
     <div id="1"></div>
+    <br>
+    <div>Acima de 5:</div>
+    <div id="2"></div>
+    <br>
+    <div>Numeros divisiveis por 3:</div>
+    <div id="3"></div>
     <script>
 
         function contagem()
         {
+            var b =""
+            var c =""
+            var d=""
             for(let i = 0; i<=20;i++){
-                var a = Math.random(10)*10
+                var a = (Math.random(10)*10).toFixed(0)
+                b = b +" "+ a
                 if(a>=5){
-                    
+                    c = c +" "+ a 
+                }
+                if(a % 3 ===0){
+                    d = d+" "+a
                 }
             }
-            document.getElementById("1").innerHTML = "<p>"+a.toFixed(0)+"</p>"
+            document.getElementById("1").innerHTML = "<p>"+b+"</p>"
+            document.getElementById("2").innerHTML = "<p>"+c+"</p>"
+            document.getElementById("3").innerHTML = "<p>"+d+"</p>"
         };
-
-        
-    </script>
+</script>
 </body>
 </html>

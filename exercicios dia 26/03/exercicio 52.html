@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Idades:</div>
+    <div id="5"></div>
+    <div>Media:</div>
+    <div id="1"></div>
+    <div>Maiores de 18:</div>
+    <div id="2"></div>
+    <div>Menores de 5:</div>
+    <div id="3"></div>
+    <div>Maior:</div>
+    <div id="4"></div>
+<script>
+    window.onload = function(){
+        var num = prompt("Digite 10 numeros") 
+        var line = num.split(' ')
+        var a = 0
+        var b = 0
+        var c = 0
+        var d = ""
+        var e = line[0]
+            var nom =[
+            Number(line[0]),Number(line[1]),Number(line[2]),Number(line[3]),Number(line[4]),Number(line[5]),Number(line[6]), Number(line[7]),Number(line[8]),Number(line[9])
+            ]
+             for(var i = 0;i < nom.length ;i++){
+                d = nom
+                a += nom[i]
+                if(nom[i] >= 18){
+                    b++}
+                 if(nom[i] < 5){
+                    c++
+                }
+                if (nom[i] >e){
+                    e = nom[i]
+                }
+             } 
+             var media = (a) / 10
+             
+            document.getElementById("1").innerHTML = "<p>"+media+"</p>";
+            document.getElementById("2").innerHTML = "<p>"+b+"</p>";
+            document.getElementById("3").innerHTML = "<p>"+c+"</p>";
+            document.getElementById("4").innerHTML = "<p>"+e+"</p>";
+            document.getElementById("5").innerHTML = "<p>"+d.join(" ")+"</p>";}
+
+
+</script>
+</body>
+</html>

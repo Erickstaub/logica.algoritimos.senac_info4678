@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <div id="5"></div>
+
+    <script>
+        var mul = 0
+        var m20 = 0
+        var idam = 0
+        for(let i =0;i<6;i++){
+        var gen = prompt("Seu genero" +"\n"+ "1 para homen, 2 para mulher" )
+        var ida = Number(prompt("Sua idade"))
+        if(gen == 2){
+            mul++
+            if(ida >= 20){
+                m20++
+            }
+        }else{
+            idam += ida
+        }
+        }
+        document.getElementById("1").innerHTML = "<p>"+mul+"</p>"
+        document.getElementById("2").innerHTML = "<p>"+m20+"</p>"
+        document.getElementById("3").innerHTML = "<p>"+idam+"</p>"
+        document.getElementById("4").innerHTML = "<p>"+0+"</p>"
+        document.getElementById("5").innerHTML = "<p>"+0+"</p>"
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
