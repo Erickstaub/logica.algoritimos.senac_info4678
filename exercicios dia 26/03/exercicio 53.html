@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div
     <div id="1"></div>
     <div id="2"></div>
     <div id="3"></div>
@@ -13,9 +14,11 @@
     <div id="5"></div>
 
     <script>
+        var hom = 0
         var mul = 0
         var m20 = 0
         var idam = 0
+        var idah = 0
         for(let i =0;i<6;i++){
         var gen = prompt("Seu genero" +"\n"+ "1 para homen, 2 para mulher" )
         var ida = Number(prompt("Sua idade"))
@@ -25,14 +28,20 @@
                 m20++
             }
         }else{
-            idam += ida
+            
+                hom++
+                idah += ida
+            }
+            idam +=ida
+
         }
-        }
-        document.getElementById("1").innerHTML = "<p>"+mul+"</p>"
-        document.getElementById("2").innerHTML = "<p>"+m20+"</p>"
-        document.getElementById("3").innerHTML = "<p>"+idam+"</p>"
-        document.getElementById("4").innerHTML = "<p>"+0+"</p>"
-        document.getElementById("5").innerHTML = "<p>"+0+"</p>"
+        var media = idam / 5
+        var mediah = idah / hom
+        document.getElementById("1").innerHTML = "<p>"+hom+"</p>"
+        document.getElementById("2").innerHTML = "<p>"+mul+"</p>"
+        document.getElementById("3").innerHTML = "<p>"+media+"</p>"
+        document.getElementById("4").innerHTML = "<p>"+mediah+"</p>"
+        document.getElementById("5").innerHTML = "<p>"+m20+"</p>"
 
 
 
