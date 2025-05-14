@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div
+    <div>Quantidade de homens</div>
     <div id="1"></div>
+    <div>Quantidade de mulheres</div>
     <div id="2"></div>
+    <div>Media total de idades</div>
     <div id="3"></div>
+    <div>Media de idade dos homens</div>
     <div id="4"></div>
+    <div>Quantidade de mulheres 20+</div>
     <div id="5"></div>
 
     <script>
@@ -19,7 +23,7 @@
         var m20 = 0
         var idam = 0
         var idah = 0
-        for(let i =0;i<6;i++){
+        for(let i =0;i<5;i++){
         var gen = prompt("Seu genero" +"\n"+ "1 para homen, 2 para mulher" )
         var ida = Number(prompt("Sua idade"))
         if(gen == 2){
@@ -27,13 +31,12 @@
             if(ida >= 20){
                 m20++
             }
-        }else{
-            
+        }else if(gen == 1){       
                 hom++
                 idah += ida
-            }
+            }   
             idam +=ida
-
+        
         }
         var media = idam / 5
         var mediah = idah / hom
@@ -42,14 +45,7 @@
         document.getElementById("3").innerHTML = "<p>"+media+"</p>"
         document.getElementById("4").innerHTML = "<p>"+mediah+"</p>"
         document.getElementById("5").innerHTML = "<p>"+m20+"</p>"
-
-
-
-
-
-
-
-
+        
     </script>
 </body>
 </html>

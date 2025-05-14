@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Altura media</div>
+    <div id="1"></div>
+    <div>Quantos pesa mais que 90</div>
+    <div id="2"></div>
+    <div>Quantos pesa menos 50 e tem menos que 1.60</div>
+    <div id="3"></div>
+    <div>Quantos pesa mais que 100 e tem mais de 1.90</div>
+    <div id="4"></div>
+    <script>
+        var pesos = 0
+        var m90 = 0
+        var m50 = 0
+        var m100 = 0
+        for(let i=0;i<7;i++){
+            var alt = Number(prompt("Digite sua altura"))
+            var peso = Number(prompt("Digite seu peso"))
+            pesos += alt
+            if(peso > 90){
+                m90++
+            }
+             if(alt < 150 && peso < 50){
+                m50++
+            }
+            if(alt > 190 && peso > 100){
+                m100++
+            }
+        }
+        var mediaA = pesos / 7
+        
+        document.getElementById("1").innerHTML = "<p>"+mediaA.toFixed("0")+"</p>"
+        document.getElementById("2").innerHTML = "<p>"+m90+"</p>"
+        document.getElementById("3").innerHTML = "<p>"+m50+"</p>"
+        document.getElementById("4").innerHTML = "<p>"+m100+"</p>"
+        
+    </script>
+</body>
+</html>

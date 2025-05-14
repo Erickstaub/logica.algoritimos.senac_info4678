@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha um numero</title>
+</head>
+<body>
+    <div id="1"></div>
+    <div id="2"></div>
+
+    <script>
+        var pc = (Math.random()*10).toFixed(0)
+        var ele = Number(prompt("O computador escolheu um numero entre 1 a 10 "+ "\n"+"voce tem 4 chances de acertar"))
+        if(pc == ele){
+            document.getElementById("1").innerHTML = "<p>"+"Parabens voce acertou"+"</p>"
+        }else{
+            for(let i = 0;i<3;i++){
+                var ele2 =Number(prompt("Tente novamente"))
+                if(ele2 === pc){
+                document.getElementById("1").innerHTML = "<p>"+"Parabens voce acertou o numero era: "+pc+"</p>"
+                    break
+                }
+            }
+        }
+        document.getElementById("2").innerHTML = "<p>"+"O numero era: "+ pc+"</p>"
+    </script>
+    
+</body>
+</html>
