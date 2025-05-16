@@ -6,6 +6,7 @@
     <title>Escolha um numero</title>
 </head>
 <body>
+    <div>Tente advinhar o numero que a Maquina pensou</div>
     <div id="1"></div>
     <div id="2"></div>
 
@@ -22,8 +23,11 @@
                     break
                 }
             }
+            if(ele2 != pc){
+                document.getElementById("1").innerHTML = `<p> Que pena, você perdeu</p>`
+            }
         }
-        document.getElementById("2").innerHTML = "<p>"+"O numero era: "+ pc+"</p>"
+        document.getElementById("2").innerHTML = `<p> O numero era:  ${pc}</p>`
     </script>
     
 </body>
