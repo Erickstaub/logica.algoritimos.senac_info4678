@@ -6,33 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="number" id="1">
-    <input type="number" id="2">
-    <input type="number" id="3">
-    <input type="number" id="4">
-    <input type="number" id="5">
-    <input type="number" id="6">
-
-    <button onclick="soma()">SOMAR</button>
+    <div>Quantos numeros sao impar e par?</div>
     <div id="tudo"></div>
     <script>
-        function soma(){
             var par = 0
             var inpar = 0
-         var num = [
-         Number(document.getElementById("1").value),
-         Number(document.getElementById("2").value),
-         Number(document.getElementById("3").value),
-         Number(document.getElementById("4").value),
-         Number (document.getElementById("5").value),
-         Number(document.getElementById("6").value)]
-         for(let i= 0; i < num.length;i++)
-        if(num [i] % 2 === 0){
+         for(let i= 0; i < 6;i++){
+         var num = Number(prompt("Escolha um numero inteiro"))
+        if(num % 2 === 0){
             par++
         }else{
             inpar++
         }
+    }
         document.getElementById("tudo").innerHTML = `<p>Pares: ${par}</p><p>Ímpares: ${inpar}</p>`
-        }</script>
+        </script>
 </body>
 </html>
