@@ -18,7 +18,7 @@
     <div id="4"></div>
 <script>
     window.onload = function(){
-        var num = prompt("Digite 10 numeros") 
+        var num = prompt("Digite a idade das pessoas do grupo(Obrigatorio 10)"+"\n"+"(Deixe as idades espaçadas)") 
         var line = num.split(' ')
         var a = 0
         var b = 0
@@ -33,7 +33,7 @@
                 a += nom[i]
                 if(nom[i] >= 18){
                     b++}
-                 if(nom[i] < 5){
+                 if(nom[i] <= 5){
                     c++
                 }
                 if (nom[i] >e){

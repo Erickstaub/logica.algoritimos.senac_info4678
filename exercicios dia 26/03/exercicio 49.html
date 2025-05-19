@@ -11,15 +11,19 @@
     <script>
             var par = 0
             var inpar = 0
+            var npar = ""
+            var ninpar = ""
          for(let i= 0; i < 6;i++){
          var num = Number(prompt("Escolha um numero inteiro"))
         if(num % 2 === 0){
             par++
+            npar = npar +" "+num
         }else{
             inpar++
+            ninpar = ninpar+" "+num
         }
     }
-        document.getElementById("tudo").innerHTML = `<p>Pares: ${par}</p><p>Ímpares: ${inpar}</p>`
+        document.getElementById("tudo").innerHTML = `<p>Pares: ${par}, Sendo eles: ${npar}</p><p>Ímpares: ${inpar}, Sendo eles: ${ninpar}</p>`
         </script>
 </body>
 </html>
