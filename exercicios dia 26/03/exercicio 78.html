@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>15 Numeros e os divisiveis por 10</div>
+    <div id="1"></div>
+    <script>
+        var arrai = []
+        var b = ""
+        for(var i = 0; i <15; i++){
+            var no =Number(prompt("Escolha um numero"))
+            arrai[i] = no
+            if(arrai[i] % 10 ===0){
+                b = b+" "+arrai[i]
+            } 
+        }
+        document.getElementById("1").innerHTML = `<p> Na array diz:<br>[${arrai}] <br> Multiplos de 10: ${b}</p>`
+    </script>
+</body>
+</html>

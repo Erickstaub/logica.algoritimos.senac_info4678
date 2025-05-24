@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Sete numeros aleatorios na arrey 0 array</div>
+    <div id="1"></div>
+    <script>
+        var arrai = []
+        for(var i = 0; i <7; i++){
+            var a =(Math.random(10)*10).toFixed(0)
+            arrai[0] = arrai += " "+a
+        }
+        document.getElementById("1").innerHTML = `<p> Na array diz:<br>[${arrai}]</p>`
+    </script>
+</body>
+</html>
