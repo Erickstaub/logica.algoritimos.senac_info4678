@@ -16,7 +16,7 @@
             var no =Number(prompt("Escolha um numero"))
             arrai[i] = no
             if(arrai[i] % 2 ===0){
-                b = b+" "+arrai[i]+ " No setor "+i
+                b = b+" "+arrai[i]+ " No setor "+i+", "
             } 
         }
         document.getElementById("1").innerHTML = `<p> Na array diz:<br>${arrai.join(" ")} <br> Pares: ${b}</p>`
