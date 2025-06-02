@@ -8,23 +8,23 @@
     <div>15 Números em ordem crescente</div>
     <div id="1"></div>
     <script>
-var arrai = []
-var teste = []
+    var arrai = []
+    var teste = []
 for (var i = 0; i < 15; i++) {
-    var b = Math.floor(Math.random() * 15)
+    var b = Math.ceil(Math.random() * 15)
     arrai.push(b) 
     teste.push(b)  
 }
 for(i = 0; i< arrai.length;i++){
-for(ii = 0; ii< arrai.length -1 ;ii++){
-if(arrai[ii] > arrai[ii + 1]){
-    var c = arrai[ii]
-    arrai[ii] = arrai[ii +1]
-    arrai[ii + 1] = c
+    for(ii = 0; ii< arrai.length -1 ;ii++){
+    if(arrai[ii] > arrai[ii + 1]){
+        var c = arrai[ii]
+        arrai[ii] = arrai[ii +1]
+        arrai[ii + 1] = c
+    }
+    }
 }
-}
-}
-document.getElementById("1").innerHTML = `<p> A array em ordem:<br>${arrai.join(" ")} <br> E a original é <br> ${teste.join(" ")}</p>`
+    document.getElementById("1").innerHTML = `<p> A array em ordem:<br>${arrai.join(" ")} <br> E a original é <br> ${teste.join(" ")}</p>`
     </script>
 </body>
 </html>
